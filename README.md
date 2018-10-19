@@ -6,10 +6,21 @@
 *   水仙花数   ./NarcissisticNumber.cpp
 *   绘制等腰三角形  ./draw_in_shell/triangle.cpp
 *   输出9x9乘法表  ./draw_in_shell/MultiplySheet.java
+##   交换排序
 *   冒泡排序 ./sort/BubbleSort.cpp
-*   插入排序 ./sort/InsertSort.cpp *
-*   选择排序 ./sort/SelectSort.cpp *
 *   快速排序 ./sort/QuickSort.cpp *
+
+
+##   插入排序
+*   直接插入排序  ./sort/StraightInsertionSort.cpp
+*   折半插入排序  ./sort/BinaryInsertionSort.cpp *
+
+## 选择排序
+*   简单选择排序 ./sort/SimpleSelectionSort.cpp *
+*   堆排序  ./sort/HeapSort.cpp*
+
+## 查找
 *   二分查找 ./search/BinarySearch.cpp *
 
-[*] 待实现
+---
+[*] 为待实现
