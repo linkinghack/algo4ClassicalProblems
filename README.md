@@ -22,5 +22,14 @@
 ## 查找
 *   二分查找 ./search/BinarySearch.cpp *
 
+## 树
+*  堆(大顶堆和小顶堆)   ./Tree/Heap.cpp , ./Tree/Heap.hpp
+
+## 动态规划
+*   是否可得到指定和 ./DP/HasSpecificSum.cpp
+*   找到最大两项和  ./DP/FindTwoOptSum.cpp
+
+## 其他问题
+*   ./EveryDigitPlus.cpp
 ---
 [*] 为待实现
