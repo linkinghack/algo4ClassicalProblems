@@ -1,5 +1,5 @@
 # algo4ClassicalProblems
-数据结构和编程语言基础 常考算法
+数据结构和编程语言基础
 
 # 文件列表
 *   斐波那契数列  ./fibnacci.cpp
