@@ -1,19 +1,18 @@
-/**encoding:GBK **/
 #include <iostream>
 
 int fibnacci_recursion(int);
 int fibnacci_loop(int);
 int main(){
-  // µİ¹éËã·¨²âÊÔ 10¸ö
-  std::cout<<"ì³²¨ÄÇÆõÊıÁĞ"<<std::endl;
-  std::cout<<"µİ¹éËã·¨ÔËĞĞ½á¹û:"<<std::endl;
+  // é€’å½’ç®—æ³•æµ‹è¯• 10ä¸ª
+  std::cout<<"æ–æ³¢é‚£å¥‘æ•°åˆ—"<<std::endl;
+  std::cout<<"é€’å½’ç®—æ³•è¿è¡Œç»“æœ:"<<std::endl;
   for(int i=1;i<=10;i++){
     std::cout<<fibnacci_recursion(i)<<" ";  
   }
   std::cout<<std::endl;
 
-  // ·Çµİ¹éËã·¨²âÊÔ
-  std::cout<<"·Çµİ¹éËã·¨ÔËĞĞ½á¹û:"<<std::endl;
+  // éé€’å½’ç®—æ³•æµ‹è¯•
+  std::cout<<"éé€’å½’ç®—æ³•è¿è¡Œç»“æœ:"<<std::endl;
     for(int i=1;i<=10;i++){
     std::cout<<fibnacci_loop(i)<<" ";  
   }
@@ -21,9 +20,9 @@ int main(){
 }
 
 /**
-* Êä³öµÚn¸öì³²¨ÄÇÆõÊı
-* param:  n int - Ä¿±êĞòÊı
-* return: int - ÇóµÃµÄµÚn¸öÊı
+* è¾“å‡ºç¬¬nä¸ªæ–æ³¢é‚£å¥‘æ•°
+* param:  n int - ç›®æ ‡åºæ•°
+* return: int - æ±‚å¾—çš„ç¬¬nä¸ªæ•°
 **/
 int fibnacci_recursion(int n){
   if(n<=1) return n;
@@ -32,9 +31,9 @@ int fibnacci_recursion(int n){
 }
 
 /**
-* Çóì³²¨ÄÇÆõÊıÁĞµÄ·Çµİ¹éËã·¨
-* param: n int - Ä¿±êĞòÊı
-* return: int - ì³²¨ÄÇÆõÊıÁĞµÚn¸öÊı
+* æ±‚æ–æ³¢é‚£å¥‘æ•°åˆ—çš„éé€’å½’ç®—æ³•
+* param: n int - ç›®æ ‡åºæ•°
+* return: int - æ–æ³¢é‚£å¥‘æ•°åˆ—ç¬¬nä¸ªæ•°
 **/
 int fibnacci_loop(int n){
   int a=1,b=1;
