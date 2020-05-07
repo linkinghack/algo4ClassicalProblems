@@ -8,6 +8,7 @@
 
 #include<string.h>
 bool isAnagram(char * s, char * t){
+    // 也可使使用map计数
     char alphas[26] = {0};
     // resolve s
     for(int i = 0; i < strlen(s); i++) {
