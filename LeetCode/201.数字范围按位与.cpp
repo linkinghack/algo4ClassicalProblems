@@ -24,6 +24,21 @@ public:
             bits ++; // 记录移动位数，用户最后恢复数字
         }
         return m << bits;  // 恢复最初位置
+
+        /**
+         * 另一种恢复方式
+        if(m == 0){
+            return 0;
+        }
+        int moveFactor = 1;
+        while(m != n){
+            m >>= 1;
+            n >>= 1;
+            moveFactor <<= 1;
+        }
+        return m * moveFactor;
+         *
+         */ 
     }
 };
 // @lc code=end
