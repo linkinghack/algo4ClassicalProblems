@@ -14,7 +14,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         map<int, int> pool;
-        vector<int> sol;
+        vector<int> result;
         for (size_t i = 0; i < nums.size(); i++)
         {
             pool.insert({nums[i], i});
@@ -25,12 +25,12 @@ public:
             int hope = target - nums[i];
             map<int,int>::iterator phope = pool.find(hope);
             if (phope != pool.end() && phope->second != i) {
-                sol.push_back(i);
-                sol.push_back(phope->second);
-                return sol;
+                result.push_back(i);
+                result.push_back(phope->second);
+                return result;
             }
         }
-        return sol;
+        return result;
     }
 };
 

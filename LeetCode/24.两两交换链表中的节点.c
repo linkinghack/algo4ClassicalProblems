@@ -15,7 +15,7 @@
 
 struct ListNode* swapPairs(struct ListNode* head){
     struct ListNode *prev = NULL, *curr, *next, new_head;
-    new_head.next = head;  // new_head初始不属于链表
+    new_head.next = head;
     prev = &new_head;
     while(prev->next && prev->next-> next)
     {
@@ -26,7 +26,7 @@ struct ListNode* swapPairs(struct ListNode* head){
         prev = a;
     }
 
-    return new_head.next; // new_head无数据,跳过
+    return new_head.next;
 }
 
 
