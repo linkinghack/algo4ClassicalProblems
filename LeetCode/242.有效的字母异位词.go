@@ -32,24 +32,6 @@ func solveBySort(s string, t string) bool {
 	return true
 }
 
-func solveBySort(s string, t string) bool {
-	if len(s) != len(t) {
-		return false
-	}
-
-	sArr := strings.Split(s, "")
-	tArr := strings.Split(t, "")
-	sort.Strings(sArr)
-	sort.Strings(tArr)
-
-	for i := 0; i < len(sArr); i++ {
-		if sArr[i] != tArr[i] {
-			return false
-		}
-	}
-	return true
-}
-
 func solveWithHashTable(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
