@@ -26,7 +26,7 @@ public:
         set<int> sumRecord;
         for(int i = 0; i < nums.size()-2; i++) {
             // 跳过连续的相同数字(刚处理完结果一样，一方面节省失败验证的时间，一方面避免重复结果)
-            // 依赖与前一步排序
+            // 依赖前一步排序
             if(i >= 1 && nums[i] == nums[i-1]) {
                 continue;
             }
