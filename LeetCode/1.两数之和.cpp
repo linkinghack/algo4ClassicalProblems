@@ -15,19 +15,17 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         map<int, int> pool;
         vector<int> result;
-        for (size_t i = 0; i < nums.size(); i++)
-        {
-            pool.insert({nums[i], i});
-        }
 
         for (int i = 0; i < nums.size(); i++)
         {
             int hope = target - nums[i];
             map<int,int>::iterator phope = pool.find(hope);
             if (phope != pool.end() && phope->second != i) {
-                result.push_back(i);
                 result.push_back(phope->second);
+                result.push_back(i);
                 return result;
+            } else {
+                pool.insert({nums[i], i});
             }
         }
         return result;
