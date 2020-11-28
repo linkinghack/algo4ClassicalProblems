@@ -52,7 +52,7 @@ func robMethod2(nums []int) int {
 	prev, now := 0, 0
 	for _, v := range nums {
 		// prev: a[i-2], now: a[i-1]
-		prev, now = now, math.Max(float64(prev+v), now)
+		prev, now = now, int(math.Max(float64(prev+v), float64(now)))
 	}
 	return now
 }
