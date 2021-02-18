@@ -4,7 +4,7 @@
  * [208] 实现 Trie (前缀树)
  */
 
-package main
+package LeetCode
 
 // @lc code=start
 type Trie struct {
